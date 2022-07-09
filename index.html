@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <script src="dom.js"></script>
+	<main class="page">
+	 	<section class="shopping-cart dark">
+	 		<div class="container">
+		        <div class="block-heading">
+		          <h2>Shopping Cart</h2>
+		          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+		        </div>
+		        <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="j4.webp">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Sumsung j4</a>
+								 							<div class="product-info">
+									 							<div>Display: <span class="value">5 inch</span></div>
+									 							<div>RAM: <span class="value">4GB</span></div>
+									 							<div>Memory: <span class="value">32GB</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantite" type="number" value ="1" class="form-control quantity-input" onchange="summm()">
+							 						</div>
+							 						<div class="col-md-3 price"
+                                                     id="prix"
+                                                    >
+                                                    120
+							 							<span id="prix"></span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="j7.webp">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Sumsung j7</a>
+								 							<div class="product-info">
+									 							<div>Display: <span class="value">7 inch</span></div>
+									 							<div>RAM: <span class="value">8GB</span></div>
+									 							<div>Memory: <span class="value">32GB</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input" onchange="summ()" >
+							 						</div>
+							 						<div class="col-md-3 price" id="myprice"
+                                                    >
+                                                        420
+							 							<span id="myprice"></span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="s10.webp">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Sumsung S10</a>
+								 							<div class="product-info">
+									 							<div>Display: <span class="value">8 inch</span></div>
+									 							<div>RAM: <span class="value">12GB</span></div>
+									 							<div>Memory: <span class="value">64GB</span></div>
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quan" type="number" value ="1" class="form-control quantity-input" onchange="somme()" >
+							 						</div>
+							 						<div class="col-md-3 price" id="soum">
+                                                        700
+							 							<span id="soum"></span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+			 					<h3>Summary</h3>
+			 					<div class="summary-item " id="totaal">$0</div>
+			 					<div class="summary-item" id="mytotal">$0</div>
+			 					<div class="summary-item" id="totality">$0</div>
+			 					<div class="summary-item" id="general-total">$0</div>
+			 					<button type="button" class="btn btn-primary btn-lg btn-block" onclick="g_tot()">Checkout</button>
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+	 		</div>
+		</section>
+	</main>
+</body>
+
+</body>
+</html>
